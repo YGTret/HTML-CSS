@@ -1,0 +1,63 @@
+/* Общие стили для всех страниц */
+
+body {
+    display: flex;
+}
+
+
+/* Стили для левой части экрана с HTML файлами */
+
+body>*:first-child {
+    flex: 1;
+    padding: 20px;
+}
+
+
+/* Стили для правой части экрана с файлом стилей */
+
+link[rel="stylesheet"] {
+    flex: 0 0 300px;
+    padding: 20px;
+}
+
+
+/* Стиль для ссылок меню */
+
+.nav-link {
+    text-decoration: none;
+    color: cornflowerblue;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+/* Стиль для заголовков h1 */
+
+.h1-style {
+    color: #222222;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+
+/* Стиль для параграфов */
+
+.paragraph-style {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987;
+}
+
+
+/* Стиль для заголовков h2 */
+
+.h2-style {
+    color: coral;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;
+}
