@@ -1,3 +1,23 @@
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url("font/Gilroy-Semibold.woff2");
+}
+
+@font-face {
+    font-family: Gilroy-SemiBold;
+    src: url("font/Gilroy-Semibold.woff2");
+}
+
+@font-face {
+    font-family: Gilroy-Medium;
+    src: url("font/Gilroy-Medium.woff2");
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url("font/Gilroy-Regular.woff2");
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -7,20 +27,32 @@ a {
     text-decoration: none;
 }
 
-.content {
+body {
     background: #FFF;
-    font-style: normal;
+    font-family: Gilroy, serif;
     font-weight: 400;
-    line-height: normal;
 }
 
-.logo {
+.content,
+.footer {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 40px;
+    margin-bottom: 84px;
 }
 
 .nav {
+    display: flex;
+    justify-content: space-between;
+    width: 533px;
     font-size: 14px;
-    margin-top: 40px;
+    line-height: 17px;
 }
 
 .nav__link {
@@ -34,48 +66,57 @@ a {
 }
 
 .main {
-    margin-top: 89px;
+    display: flex;
+    gap: 39px;
+    margin-bottom: 162px;
+}
+
+.main__info {
+    max-width: 522px;
 }
 
 .main__title {
     color: #000;
     font-size: 60px;
+    font-family: 'Gilroy-Bold', serif;
+    margin-bottom: 17px;
 }
 
 .main__text {
     color: #888;
     font-size: 20px;
-    margin-top: 17px;
     font-family: 'Gilroy-Medium', serif;
+    margin-bottom: 37px;
 }
 
 .btn_group {
-    margin-top: 37px;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.btn:hover {
+    color: #FFF;
+    background: #F25822;
+    font-family: 'Gilroy-Bold', serif;
+    border-radius: 50px;
+    box-shadow: 4px 4px 8px 0 rgba(242, 88, 34, 0.20);
+    flex-shrink: 0;
+    line-height: 19px;
 }
 
 .btn {
-    font-family: 'Gilroy-Bold', serif;
-    border-radius: 50px;
-    border-width: 0;
-    background: #F25822;
-    box-shadow: 4px 4px 8px 0 rgba(242, 88, 34, 0.20);
-    color: #FFF;
-    font-size: 15px;
-    flex-shrink: 0;
-    padding: 15px 36px 16px 35px;
-}
-
-.btn_group__text {
     color: #AAA;
+    background-color: #FFFFFF;
     font-size: 15px;
     font-family: 'Gilroy-Bold', serif;
-}
-
-.footer {
-    margin-top: 162px;
+    padding: 15px 36px 16px 35px;
+    border-width: 0;
+    cursor: pointer;
 }
 
 .footer__logo {
-    margin-top: 97px;
-    margin-bottom: 97px;
+    display: flex;
+    justify-content: space-between;
+    margin: 97px auto;
 }
